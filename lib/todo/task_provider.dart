@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:todo_list_application/todo/task.dart';
 
 class TaskProvider with ChangeNotifier {
-  List<Task> _tasks = [];
+  List<ToDoModel> _tasks = [];
 
-  List<Task> get tasks => _tasks;
+  List<ToDoModel> get tasks => _tasks;
 
-  void addTask(Task task) {
+  void addTask(ToDoModel task) {
     _tasks.add(task);
     notifyListeners();
   }
 
-  void removeTask(Task task) {
+  void removeTask(ToDoModel task) {
     _tasks.remove(task);
     notifyListeners();
   }

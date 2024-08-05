@@ -1,11 +1,11 @@
 import 'dart:io';
 
-class Task {
+class ToDoModel {
   final String title;
   final String description;
   final File? image;
 
-  Task({
+  ToDoModel({
     required this.title,
     required this.description,
     this.image,
@@ -19,8 +19,8 @@ class Task {
     };
   }
 
-  factory Task.fromMap(Map<String, dynamic> map) {
-    return Task(
+  factory ToDoModel.fromMap(Map<String, dynamic> map) {
+    return ToDoModel(
       title: map['title'],
       description: map['description'],
       image: map['imagePath'] != null ? File(map['imagePath']) : null,
