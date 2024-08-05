@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:todo_list_application/todo/task.dart';
 import 'dart:io';
 
 import '../todo_location/location_screen.dart';

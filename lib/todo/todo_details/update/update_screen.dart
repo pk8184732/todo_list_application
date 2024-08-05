@@ -8,7 +8,6 @@ import '../database_helper.dart'; // Ensure correct path
 class UpdateScreen extends StatefulWidget {
 
   final Map<String, dynamic> task;
-
   const UpdateScreen({Key? key, required this.task}) : super(key: key);
 
   @override
